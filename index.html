@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>Employee Directory</title>
+</head>
+
+<body>
+
+  
+
+  <div class="nav">
+
+    <!-- <i class="fas fa-address-book"></i> -->
+
+      <div class="view-page btn">View</div>
+      <div class="add-page btn">Add</div>
+      <div class="verify-page btn">Verify</div>
+      <div class="update-page btn">Update</div>
+      <div class="delete-page btn">Delete</div>
+  
+
+  </div>
+
+
+  <main>
+
+    <section id="view">
+        <div class="content"></div>
+
+    </section>
+
+    <section id="add">
+      
+      <h2>Add</h2>
+      <input class="name" type="text" value="">
+      <input class="officeNum" type="text">
+      <input class="phoneNum" type="text">
+      <button id="addBtn">+</button>
+      <div class="content"></div>
+    </section>
+
+    <section id="verify">
+
+      <h2>Verify</h2>
+      <input class="name" type="text" value="">
+      <button id="verifyBtn">?</button>
+      <div id="verifyText"></div>
+
+    </section>
+
+    <section id="update">
+      <h2>Update</h2>
+      <input class="name" type="text" value="">
+      <input class="officeNum" type="text" value="">
+      <input class="phoneNum" type="text" value="">
+      <button id="updateBtn">Update</button>
+      <div class="content"></div>
+    </section>
+
+    <section id="delete">
+      <h2>Delete</h2>
+      <input class="name" type="text" value="">
+      <button id="deleteBtn">X</button>
+      <div class="content"></div>
+    </section>
+
+  </main>
+
+  <script src="dom.js"></script>
+  <script src="employeeList.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

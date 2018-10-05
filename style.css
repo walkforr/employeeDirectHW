@@ -1,0 +1,52 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(49, 49, 49);
+    overflow-x: hidden;
+    padding-top: 100px;
+    
+}
+
+div.btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    z-index: 1;
+}
+
+div.btn:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+p {
+    color: black;
+}
+
+main {
+    margin-left: 350px;
+    color: black;
+}
+
+.box {
+    border: solid black;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 150px;
+    height: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

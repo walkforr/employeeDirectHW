@@ -134,14 +134,20 @@ $('#verifyBtn').on('click', verifySearch);
 //update
 
 //empty, push, render
-const updateEmployee = function () {
+const updateEmployee = function (employee) {
     const matchName = $("#update .name").val();
     console.log(matchName);
     for(let i = 0; i < employeeList.length; i++) {
         
         if(matchName === employeeList[i].name) {
+            console.log("string matched");
             $("#update .name").empty(employee);
-            employeeList.push(employeeUpdate);
+            if( $("#update .officeNum") !== "") {
+             employeeList[i].officeNum = $("#update .officeNum").val();
+            }
+            if( $("#update .phoneNum") !== "") {
+                employeeList[i].phoneNum = $("#update .phoneNum").val();
+               }
         }
     }
     
